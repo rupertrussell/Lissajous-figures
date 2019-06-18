@@ -26,11 +26,11 @@ void draw(){
     ellipse(x, y, dotSize, dotSize);
     radius = radius + 0.1;
     counter = counter + 1;
-    
-     if (counter == 16000){
-         noLoop();
-         save("test.png"); 
-     }
-  
+      
   }
+}
+
+void mouseClicked() {
+  save("figure.png");
+  exit();
 }
